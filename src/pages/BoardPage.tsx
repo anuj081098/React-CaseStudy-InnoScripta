@@ -103,7 +103,7 @@ export const BoardPage = () => {
         collisionDetection={closestCenter}
         onDragEnd={isAdmin ? handleDragEnd : undefined}
       >
-        <div style={{ display: 'flex', gap: '2rem' }}>
+        <div style={{ display: 'flex', gap: '2rem'}}>
           {columns.map(col => (
             <DroppableColumn key={col.key} col={col}>
               {filteredSortedIssues.filter((issue: Issue) => issue.status === col.key).length === 0 && <div>No issues</div>}

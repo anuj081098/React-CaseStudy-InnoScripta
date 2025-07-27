@@ -10,9 +10,10 @@ import { useStore } from './utils/store';
 export const App = () => {
   const {darkTheme, setDarkTheme} = useStore();
   function handleThemeChange() {
-    setDarkTheme(!darkTheme);
-    document.body.style.backgroundColor = !darkTheme ? '#333' : '#f4f4f4';
-    document.body.style.color = !darkTheme ? '#fff' : '#000';
+    const currentTheme = !darkTheme;
+    setDarkTheme(currentTheme);
+    document.body.style.backgroundColor = currentTheme ? '#333' : "white";
+    document.body.style.color = currentTheme ? '#fff' : '#000';
     document.body.style.transition = 'background-color 0.3s ease, color 0.3s ease';  
   }
 
