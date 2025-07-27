@@ -1,3 +1,6 @@
+**Live Site** - https://innoscripta-react-case-study.vercel.app/
+
+
 # 🧠 Issue Board – React Engineering Assessment
 
 Welcome! This is a React case study designed to assess your skills in frontend architecture, state management, component design, and algorithmic
